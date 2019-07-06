@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Image from './Image'
-import '../CSS/ImageGalley.css'
+import '../CSS/ImageGallery.css'
 import { connect } from 'react-redux'
 
 function mapStateToProps(state) {
@@ -11,7 +11,7 @@ function mapStateToProps(state) {
 }
 
 //ImageGalley是无状态的, 它仅仅获取数据(imgList&filterText)并对数据做些处理，不对数据进行改动
-export class ImageGalley extends Component {
+export class ImageGallery extends Component {
     
     static defaultProps = {
         this.imgsToDisplay = [];
@@ -37,15 +37,15 @@ export class ImageGalley extends Component {
     
     render() {
         return (
-            <div className="ImageGalley">
+            <div className="ImageGallery">
                 {this.imgsToDisplay.map((imgFile, index) => <Image key={index} imgFile={imgFile} />)}
             </div>
         )
     }
 
     componentDidUpdate(prevProp, prevState) {
-        console.log('ImageGalley Did Update')
+        console.log('ImageGallery Did Update')
     }
 }
 
-export default connect(mapStateToProps)(ImageGalley)
+export default connect(mapStateToProps)(ImageGallery)
