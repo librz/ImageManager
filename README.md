@@ -4,7 +4,7 @@ A Simple Image Manger wirtten in React, provides functions such as Image Uploadi
 
 Component Structure(组件树)
 <ImageManager />
-----<searchBox />
-----<ImageSelector />
-----<ImageGalley />
-    ----<Image />
+    <searchBox />
+    <ImageSelector />
+    <ImageGalley />
+        <Image />
