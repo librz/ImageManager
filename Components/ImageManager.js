@@ -4,7 +4,6 @@ import ImageSelector from './ImageSelector'
 import ImageGalley from './ImageGalley'
 import '../CSS/ImageManager.css'
 
-//stateless component
 export default function ImageManager(props) {
     return (
         <div className="ImageManager">
