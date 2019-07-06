@@ -15,21 +15,10 @@ export class Image extends Component {
     }
 
     deleteImg = () => {
-        //通过action改变store里面的state
         this.props.dispatch({
             type: Types.ClickImage,
             data: this.props.imgFile
         });
-    }
-
-    test() {
-        console.log('hello');
-        console.log(this);
-    }
-
-    test2 = () => {
-        console.log('hi');
-        console.log(this);
     }
 
     render() {
@@ -38,7 +27,7 @@ export class Image extends Component {
         const src = window.URL.createObjectURL(this.props.imgFile);
         return (
             <div className="Image">
-                <img src={src} alt={name} onClick={this.test2} />
+                <img src={src} alt={name} onClick={this.deleteImg} />
                 <div className="ImageInfo">
                     <p>File Name: {name}</p>
                     <p>File Size: {size}</p>
