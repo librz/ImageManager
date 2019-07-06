@@ -1,9 +1,9 @@
 import React from 'react'
-import ImageManager from '../component/ImageManager'
-import '../CSS/App.css'
 import { createStore } from 'redux'
-import { Types } from '../ActionTypes'
 import { Provider } from 'react-redux'
+import ImageManager from './components/ImageManager'
+import { Types } from './ActionTypes'
+import './CSS/App.css'
 
 const initialState = {
   imgList: [],
