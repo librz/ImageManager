@@ -36,7 +36,7 @@ export class ImageSelector extends Component {
                 type: Types.UploadImgs,
                 data: newImgFiles
             })
-        //改变value，所以下一次选取相同的图片时，所以仍然会触发onChange事件
+        //改变value，下一次选取相同的图片时，仍然会触发onChange事件
         e.target.value = null; 
     }
 
