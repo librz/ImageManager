@@ -1,7 +1,9 @@
 import React from 'react'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import ImageManager from './components/ImageManager'
+import { SearchBox } from './Components/SearchBox'
+import { ImageSelector } from './Components/ImageSelector'
+import { ImageGalley } from './Components/ImageGallery'
 import { Types } from './ActionTypes'
 import './CSS/App.css'
 
@@ -30,7 +32,7 @@ export default function App() {
     <div className="App">
             <SearchBox placeholder='检索图片名称' />
             <ImageSelector title="上传图片" />
-            <ImageGalley />
+            <ImageGallery />
         </div>
   </Provider>
 }
