@@ -12,7 +12,8 @@ function mapStateToProps(state) {
 
 //ImageGalley是无状态的, 它仅仅获取数据(imgList&filterText)并对数据做些处理，不对数据进行改动
 export class ImageGalley extends Component {
-    componentWillMount() {
+    
+    static defaultProps = {
         this.imgsToDisplay = [];
     }
 
@@ -32,10 +33,6 @@ export class ImageGalley extends Component {
                     return true;
             return false;
         }
-    }
-
-    componentWillUpdate() {
-        //console.log(`ImageGalley will update`)
     }
     
     render() {
