@@ -27,6 +27,10 @@ const store = createStore(reducer);
 
 export default function App() {
   return <Provider store={store}>
-    <ImageManager />
+    <div className="App">
+            <SearchBox placeholder='检索图片名称' />
+            <ImageSelector title="上传图片" />
+            <ImageGalley />
+        </div>
   </Provider>
 }
