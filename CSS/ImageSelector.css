@@ -1,0 +1,21 @@
+.ImageSelector {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ImageSelector label > p {
+    margin: 0 auto;
+    width: 400px;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    background-color: sandybrown;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ImageSelector label > input {
+    display: none;
+}

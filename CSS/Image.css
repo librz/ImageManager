@@ -1,0 +1,27 @@
+.Image {
+    display: inline-block;
+}
+
+.Image img {
+    width: 230px;
+    margin: 17px;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition: width .8s ease-in-out;
+}
+
+.Image img:hover {
+    width: 400px;
+    box-shadow: 0 0 5px purple;
+}
+
+.Image .ImageInfo {
+    border: 1px solid black;
+}
+
+.Image .ImageInfo p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}

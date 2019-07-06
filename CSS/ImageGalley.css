@@ -1,0 +1,11 @@
+.ImageGalley {
+    display: block;
+    width: 100%;
+    border: 2px solid lightskyblue;
+    border-radius: 3px;
+    padding: 20px;
+
+    /* make it scrollable */
+    overflow-y: scroll;
+    height: 70vh;
+}
