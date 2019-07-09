@@ -28,7 +28,7 @@
       <h3>SearchBox</h3>
       <ul>
         <li><strong>Desp:</strong> Search images by name</li>
-        <li><strong>Underlying Html:</strong> <code> input type="search" </code></li>
+        <li><strong>Underlying Html:</strong> <code> input type="search" autocomplete="on" </code></li>
         <li><strong>Event:</strong> User changes text in <em>SearchBox Component</em>, and <em>filterText</em>(global state) is updated</li>
       </ul>
     </li>
