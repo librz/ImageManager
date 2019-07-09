@@ -3,7 +3,7 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import { SearchBox } from './Components/SearchBox'
 import { ImageSelector } from './Components/ImageSelector'
-import { ImageGalley } from './Components/ImageGallery'
+import { ImageGallery } from './Components/ImageGallery'
 import { Types } from './ActionTypes'
 import './CSS/App.css'
 
