@@ -5,7 +5,8 @@ import { connect } from 'react-redux'
 
 function mapStateToProps(state) {
     return {
-        filterText: state.filterText
+        filterText: state.filterText,
+        imgOptions: state.imgList.map(({name}) => <option key={name} value={name} />) 
     }
 }
 
@@ -24,7 +25,16 @@ export class SearchBox extends Component {
     render() {
         return (
             <div className="SearchBox">
-                <input type='search' value={this.props.filterText} placeholder={this.props.placeholder} onChange={this.updateFilterText}    />
+                <input type='search' 
+                    value={this.props.filterText} 
+                    placeholder={this.props.placeholder} 
+                    onChange={this.updateFilterText}
+                    autocomplete="on"
+                    list="options"
+                />
+                <datalist id="options">
+                    {this.props.imgOptions}
+                </datalist>
             </div>
         )
     }
