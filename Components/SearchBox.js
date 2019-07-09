@@ -29,7 +29,7 @@ export class SearchBox extends Component {
                     value={this.props.filterText} 
                     placeholder={this.props.placeholder} 
                     onChange={this.updateFilterText}
-                    autocomplete="on"
+                    autoComplete="on"
                     list="options"
                 />
                 <datalist id="options">
