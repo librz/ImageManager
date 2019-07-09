@@ -38,7 +38,7 @@ export class ImageGallery extends Component {
     render() {
         return (
             <div className="ImageGallery">
-                {this.imgsToDisplay.map((imgFile, index) => <Image key={index} imgFile={imgFile} />)}
+                {this.props.imgsToDisplay.map((imgFile, index) => <Image key={index} imgFile={imgFile} />)}
             </div>
         )
     }
