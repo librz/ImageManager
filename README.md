@@ -52,7 +52,7 @@
       <h3>ImageGallery</h3>
       <ul>
         <li><strong>Desp:</strong> A list of images</li>
-        <li><strong>Underlying Html:</strong> a bounch of <em>Image</em> components </li>
+        <li><strong>Underlying Html:</strong> a bunch of <em>Image</em> components </li>
         <li>
           <strong>Event:</strong> This component doens't have any event on its own. <br> 
           However, when <em>onChange</em> event in <em>ImageSelector</em> or <em>onClick</em> event in <em>Image</em> is triggered,               global state <em>imgList</em> will change. When <em>onChange</em> event in <em>SearchBox</em> is triggered, global state <em>filterText</em> will change.
