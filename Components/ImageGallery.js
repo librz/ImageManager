@@ -14,7 +14,7 @@ function mapStateToProps(state) {
 export class ImageGallery extends Component {
     
     static defaultProps = {
-        this.imgsToDisplay = [];
+        imgsToDisplay: []
     }
 
     shouldComponentUpdate(nextProp, nextState) {
